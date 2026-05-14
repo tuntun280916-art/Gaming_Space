@@ -1,0 +1,127 @@
+/* ============================================
+   RESPONSIVE - SIMPLIFICADO
+   ============================================ */
+
+/* TABLET - 768px */
+@media (max-width: 768px) {
+    :root {
+        --font-size-h1: 1.5rem;
+        --font-size-h2: 1.25rem;
+        --spacing-lg: 1rem;
+        --spacing-xl: 1.5rem;
+        --spacing-2xl: 2rem;
+    }
+
+    main {
+        padding: var(--spacing-lg) var(--spacing-md);
+    }
+
+    .products-grid {
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+        gap: var(--spacing-md);
+    }
+
+    .nav-menu {
+        gap: var(--spacing-lg);
+    }
+
+    .nav-menu a {
+        padding: var(--spacing-md) var(--spacing-sm);
+    }
+}
+
+/* MOBILE - 480px */
+@media (max-width: 480px) {
+    :root {
+        --font-size-base: 14px;
+        --font-size-h1: 1.25rem;
+        --font-size-h2: 1rem;
+        --font-size-h3: 0.95rem;
+        --spacing-md: 0.75rem;
+        --spacing-lg: 1rem;
+        --spacing-xl: 1.25rem;
+    }
+
+    header {
+        padding: var(--spacing-md);
+    }
+
+    main {
+        padding: var(--spacing-lg) var(--spacing-md);
+    }
+
+    .navbar {
+        padding: 0;
+        position: relative;
+    }
+
+    .nav-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        gap: 0;
+        background-color: var(--color-white);
+        border-bottom: 1px solid var(--color-border);
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .nav-menu a {
+        border-bottom: 1px solid var(--color-border);
+        border: none;
+        padding: var(--spacing-md);
+    }
+
+    .hamburger {
+        display: flex;
+        position: absolute;
+        right: var(--spacing-md);
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .products-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--spacing-sm);
+    }
+
+    .product-card {
+        border-radius: 4px;
+    }
+
+    .product-image {
+        height: 120px;
+        font-size: 2rem;
+    }
+
+    .product-actions {
+        flex-direction: column;
+        gap: var(--spacing-sm);
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+    table {
+        font-size: var(--font-size-small);
+    }
+
+    th, td {
+        padding: var(--spacing-sm);
+    }
+
+    .modal-content {
+        width: 95%;
+        padding: var(--spacing-lg);
+    }
+
+    footer {
+        padding: var(--spacing-lg) var(--spacing-md);
+    }
+}
