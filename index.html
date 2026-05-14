@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming Space - Tu tienda de componentes</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/pages/index.css">
+</head>
+<body>
+    <header>
+        <h1>🎮 Gaming Space</h1>
+        <p>Tu tienda de componentes y periféricos gamer</p>
+    </header>
+
+    <nav class="navbar">
+        <ul class="nav-menu">
+            <li><a href="index.html" class="active">Inicio</a></li>
+            <li><a href="products.html">Productos</a></li>
+            <li><a href="cart.html">Carrito <span id="cart-count">(0)</span></a></li>
+        </ul>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <h2>Bienvenido a Gaming Space</h2>
+            <p>Construye tu PC gamer perfecta con los mejores componentes y periféricos</p>
+            <a href="products.html" class="btn btn-primary">Ver Productos</a>
+        </section>
+
+        <section class="info-section">
+            <h2>¿Por qué Gaming Space?</h2>
+            <div class="info-cards">
+                <div class="card">
+                    <h3>💡 Información Clara</h3>
+                    <p>Aprende sobre cada componente antes de comprar</p>
+                </div>
+                <div class="card">
+                    <h3>⚙️ Compatibilidad</h3>
+                    <p>Guías de compatibilidad para tu armado</p>
+                </div>
+                <div class="card">
+                    <h3>💰 Mejores Precios</h3>
+                    <p>Componentes de calidad al mejor valor</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="featured-products">
+            <h2>Productos Destacados</h2>
+            <div class="products-grid" id="featured"></div>
+        </section>
+
+        <section class="cta-section">
+            <h2>¿Listo para armar tu PC?</h2>
+            <p>Explora nuestro catálogo completo de productos</p>
+            <a href="products.html" class="btn btn-primary">Ir a Productos</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Gaming Space. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="js/config.js"></script>
+    <script src="js/shop-system.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/pages/index.js"></script>
+</body>
+</html>
