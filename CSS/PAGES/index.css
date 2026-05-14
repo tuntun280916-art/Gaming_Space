@@ -1,0 +1,95 @@
+/* ============================================
+   PÁGINA INICIO - SIMPLIFICADA
+   ============================================ */
+
+.hero {
+    background: linear-gradient(135deg, var(--color-primary), #1e40af);
+    color: var(--color-white);
+    padding: var(--spacing-2xl);
+    border-radius: var(--border-radius);
+    text-align: center;
+    margin-bottom: var(--spacing-2xl);
+}
+
+.hero h2 {
+    color: var(--color-white);
+    margin-bottom: var(--spacing-lg);
+}
+
+.hero p {
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: var(--spacing-lg);
+}
+
+.info-section {
+    margin-bottom: var(--spacing-2xl);
+}
+
+.info-section h2 {
+    text-align: center;
+    margin-bottom: var(--spacing-2xl);
+}
+
+.info-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--spacing-lg);
+}
+
+.info-cards .card {
+    text-align: center;
+}
+
+.info-cards h3 {
+    color: var(--color-primary);
+}
+
+.featured-products {
+    margin-bottom: var(--spacing-2xl);
+}
+
+.featured-products h2 {
+    text-align: center;
+    margin-bottom: var(--spacing-2xl);
+}
+
+.cta-section {
+    background-color: var(--color-secondary);
+    color: var(--color-white);
+    padding: var(--spacing-2xl);
+    text-align: center;
+    border-radius: var(--border-radius);
+}
+
+.cta-section h2 {
+    color: var(--color-white);
+    margin-bottom: var(--spacing-md);
+}
+
+.cta-section p {
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: var(--spacing-lg);
+}
+
+.cta-section .btn {
+    background-color: var(--color-white);
+    color: var(--color-secondary);
+}
+
+.cta-section .btn:hover {
+    background-color: var(--color-light);
+}
+
+@media (max-width: 768px) {
+    .hero {
+        padding: var(--spacing-lg);
+    }
+
+    .hero h2 {
+        font-size: 1.5rem;
+    }
+
+    .info-cards {
+        grid-template-columns: 1fr;
+    }
+}
