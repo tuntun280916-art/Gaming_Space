@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito - Gaming Space</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/pages/cart.css">
+</head>
+<body>
+    <header>
+        <h1>🎮 Gaming Space</h1>
+        <p>Tu tienda de componentes y periféricos gamer</p>
+    </header>
+
+    <nav class="navbar">
+        <ul class="nav-menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="products.html">Productos</a></li>
+            <li><a href="cart.html" class="active">Carrito <span id="cart-count">(0)</span></a></li>
+        </ul>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <main>
+        <section class="cart-section">
+            <h2>Mi Carrito</h2>
+            
+            <div id="empty-cart-message" class="empty-cart">
+                <p>Tu carrito está vacío</p>
+                <a href="products.html" class="btn btn-primary">Continuar comprando</a>
+            </div>
+
+            <div id="cart-container" class="hidden">
+                <div class="cart-items">
+                    <table class="cart-table">
+                        <thead>
+                            <tr>
+                                <th>Producto</th>
+                                <th>Precio</th>
+                                <th>Cantidad</th>
+                                <th>Subtotal</th>
+                                <th>Acción</th>
+                            </tr>
+                        </thead>
+                        <tbody id="cart-items-body"></tbody>
+                    </table>
+                </div>
+
+                <div class="cart-summary">
+                    <div class="summary-section">
+                        <h3>Resumen</h3>
+                        <div class="summary-row">
+                            <span>Subtotal:</span>
+                            <span id="subtotal">$0.00</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Impuesto (10%):</span>
+                            <span id="tax">$0.00</span>
+                        </div>
+                        <div class="summary-row total">
+                            <span>Total:</span>
+                            <span id="total">$0.00</span>
+                        </div>
+                    </div>
+
+                    <div class="checkout-section">
+                        <button id="clear-cart-btn" class="btn btn-secondary">Vaciar carrito</button>
+                        <button id="checkout-btn" class="btn btn-primary">Finalizar compra</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Gaming Space. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="js/config.js"></script>
+    <script src="js/shop-system.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/pages/cart.js"></script>
+</body>
+</html>
