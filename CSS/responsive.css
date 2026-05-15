@@ -1,9 +1,8 @@
 /* ============================================
-   RESPONSIVE - SIMPLIFICADO
+   RESPONSIVE
    ============================================ */
 
-/* TABLET - 768px */
-@media (max-width: 768px) {
+@media (max-width: 770px) {
     :root {
         --font-size-h1: 1.5rem;
         --font-size-h2: 1.25rem;
@@ -30,8 +29,7 @@
     }
 }
 
-/* MOBILE - 480px */
-@media (max-width: 480px) {
+@media (max-width: 490px) {
     :root {
         --font-size-base: 14px;
         --font-size-h1: 1.25rem;
