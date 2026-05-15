@@ -51,12 +51,11 @@ function closeModal(modal) {
     if (modal) modal.classList.add('hidden');
 }
 
-// Escuchar cambios del carrito
 document.addEventListener('cartUpdated', () => {
     updateCartCount();
 });
 
-// Inicializar cuando DOM esté listo
+// Inicializar cuando DOM este listo
 document.addEventListener('DOMContentLoaded', () => {
     setupNavigation();
     updateCartCount();

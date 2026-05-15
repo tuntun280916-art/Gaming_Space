@@ -3,7 +3,6 @@
    ============================================ */
 
 const PRODUCTS = [
-    // COMPONENTES
     {
         id: 1,
         name: 'GPU NVIDIA RTX 4070',
@@ -49,8 +48,6 @@ const PRODUCTS = [
         description: 'Fuente de poder certificada',
         stock: 12
     },
-
-    // PERIFÉRICOS
     {
         id: 6,
         name: 'Teclado Mecánico Razer',
@@ -87,8 +84,6 @@ const PRODUCTS = [
         description: 'Monitor 4K profesional',
         stock: 5
     },
-
-    // VIDEOJUEGOS
     {
         id: 10,
         name: 'Cyberpunk 2077',
