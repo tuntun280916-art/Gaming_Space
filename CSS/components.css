@@ -152,7 +152,6 @@
     gap: var(--spacing-lg);
 }
 
-/* MODAL */
 .modal {
     position: fixed;
     top: 0;
@@ -193,7 +192,6 @@
     color: var(--color-danger);
 }
 
-/* TABLA */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -221,7 +219,6 @@ tbody tr:hover {
     background-color: var(--color-light);
 }
 
-/* INPUTS */
 input, select {
     width: 100%;
     padding: var(--spacing-md);
@@ -246,7 +243,6 @@ label {
     color: var(--color-dark);
 }
 
-/* ALERTAS */
 .alert {
     padding: var(--spacing-md);
     border-radius: var(--border-radius);
