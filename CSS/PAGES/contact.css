@@ -7,3 +7,7 @@
     margin: 0;
     white-space: nowrap;
 }
+
+.contact-section h3 {
+    color: var(--color-primary);
+}
